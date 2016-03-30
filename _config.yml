@@ -11,7 +11,7 @@ title: "Bootstrap/Jekyll"
 author: Benjamin Søgaard
 
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://tscwg.com/hf/test1/Bootstrap/_site" # the base hostname & protocol for your site
+url: "http://bts30.github.io" # the base hostname & protocol for your site
 
 # Build settings
 markdown: kramdown
