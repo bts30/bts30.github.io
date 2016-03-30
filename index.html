@@ -1,0 +1,10 @@
+---
+layout: default
+---
+{% for page in site.pages %}
+	{% if page.title == "index" %}
+		{% assign indexpage = page %}
+	{% endif %}
+{% endfor %}
+
+{{indexpage.content}}

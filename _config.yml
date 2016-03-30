@@ -1,0 +1,23 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely need to edit after that.
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'jekyll serve'. If you change this file, please restart the server process.
+
+
+# Site settings
+title: "Bootstrap/Jekyll"
+author: Benjamin Søgaard
+
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "http://tscwg.com/hf/test1/Bootstrap/_site" # the base hostname & protocol for your site
+
+# Build settings
+markdown: kramdown
+
+encoding:     "utf-8"
+markdown_ext: "markdown,mkdown,mkdn,mkd,md"
+
+
+include: ['_pages']

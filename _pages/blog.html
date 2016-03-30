@@ -1,0 +1,18 @@
+---
+layout: page
+title: Blog
+permalink: /blog/
+id: 5
+carousel_img: ["/images/pic2.jpg"]
+---
+{% for post in site.posts %}
+	
+	{{ post.date | date: "%b %-d, %Y" }}
+	<h2><a href="{{ post.url | prepend: site.url }}">{{ post.title }}</a></h2>
+	<p>{{ post.excerpt }}</p>
+	{% if forloop.last == false %}
+		<hr>
+	{% endif %}
+{% else %}
+	<h2>No posts :(</h2>
+{% endfor %}
