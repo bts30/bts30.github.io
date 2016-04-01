@@ -7,6 +7,7 @@ carousel_img: ["/images/pic2.jpg", "/images/pic3.jpg", "/images/pic4.jpg", "/ima
 ---
 
 ## HI Gretchen! (this is h2)
+I like cake!
 
 Paragraphs are separated by a blank line.
 
