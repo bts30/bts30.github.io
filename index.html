@@ -1,10 +1,22 @@
----
-layout: default
----
-{% for page in site.pages %}
-	{% if page.title == "index" %}
-		{% assign indexpage = page %}
-	{% endif %}
-{% endfor %}
+<!DOCTYPE html>
+<html>
+<head>
+	<title>RadioavisNU</title>
+</head>
+<body>
+	<script type="text/javascript">
+		var request = new XMLHttpRequest();
+		request.open("GET","http://www.dr.dk/p4/p4-radioavis",false);
+		request.send();
+		var str = request.responseText;
+		var patt = new RegExp("<a itemprop=\"url\" href=\"\/radio\/ondemand\/p4\/(.+)\" class=\"dr-link dr-icon-audio\" rel=\"dr-netradio-launch\">H&#248;r nu<\/a>");
+		var url = patt.exec(str)[1];
+		alert(url);
+		var request = new XMLHttpRequest();
+		//xhttp.open("GET", "http://www.dr.dk/mu/programcard/expanded/"+url, false);
+		//request.send();
+		//var str = request.responseText;
+	</script>
 
-{{indexpage.content}}
+</body>
+</html>
